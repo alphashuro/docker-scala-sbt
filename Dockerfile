@@ -19,3 +19,5 @@ RUN dpkg -i sbt-$SBT_VERSION.deb
 # install scala  
 RUN wget https://downloads.typesafe.com/scala/$SCALA_VERSION/scala-$SCALA_VERSION.deb
 RUN dpkg -i scala-$SCALA_VERSION.deb
+
+RUN sbt
